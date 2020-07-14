@@ -6,3 +6,8 @@ app.get('/', function (req, res) {
 app.listen(process.env.PORT, function () {
   console.log('Example app listening on heroku port!');
 });
+
+
+app.get('/:req', function (req, res) {
+  res.send(req);
+});
